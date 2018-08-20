@@ -3,7 +3,6 @@ import './App.css';
 
 import UserInput from './UserInput/UserInput';
 import UserOutput from './UserOutput/UserOutput';
-import ValidationData from './ValidationComponent/ValidationComponent';
 
 class App extends Component {
   state = {    
@@ -19,8 +18,7 @@ class App extends Component {
       <div>
       <div className="clsData">
         <UserInput changed={this.nameChangeHandler} username={this.state.username} />
-        <UserOutput username={this.state.username} />
-        <ValidationData />
+        <UserOutput username={this.state.username} />        
       </div>
       <hr />
       <div className="App">
