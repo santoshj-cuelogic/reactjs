@@ -1,0 +1,41 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jquery": true
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {   
+      "indent": ["error", 2],
+      "react/no-unescaped-entities": ["error", {"forbid": [ "}"]}],
+      "react/prop-types": "off",
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-underscore-dangle": "error",
+        "no-console": ["error", { "allow": ["info", "error"] }],
+        "camelcase": "error",
+        "func-names": ["error", "always"],
+        "key-spacing": ["error", { "beforeColon": false, "mode": "strict"}]
+    },
+    "globals": {
+        "Promise": true,
+        "_": true,
+        "chrome": true,
+        "require": true,
+        "const _": true
+    }
+  }

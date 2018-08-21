@@ -5,18 +5,18 @@ import Char from './CharComponent/CharComponent';
 
 class App extends Component {
   state = {    
-      userInput:''
+    userInput: ''
   }
 
   deleteCharBox = (index) => {
-      const text = this.state.userInput.split('');
-      text.splice(index, 1);
-      const updateText = text.join('');
-      this.setState({userInput: updateText});
+    const text = this.state.userInput.split('');
+    text.splice(index, 1);
+    const updateText = text.join('');
+    this.setState({userInput: updateText});
   }
 
   nameChangeHandler = (event) => {
-      this.setState( { userInput: event.target.value } );
+    this.setState( { userInput: event.target.value } );
   }
   render() {
     
